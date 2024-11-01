@@ -3,8 +3,4 @@ kind: ApiDefinition
 metadata:
   name: not-important
 spec:
-  use_keyless: false
-  use_standard_auth: true
-  auth_configs:
-    authToken:
-      auth_header_name: Authorization
+  use_keyless: true
