@@ -6,3 +6,17 @@ spec:
   tags:
     - staging
   detailed_tracing: true
+  CORS:
+    enable: true
+    allowed_origins:
+    - "*"
+    allowed_methods:
+    - GET
+    - POST
+    - OPTIONS
+    allowed_headers:
+    - Authorization
+    - Content-Type
+    exposed_headers:
+    - X-Custom-Header
+    allow_credentials: true
