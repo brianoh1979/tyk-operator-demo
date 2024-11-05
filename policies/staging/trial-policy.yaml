@@ -9,6 +9,10 @@ spec:
       namespace: httpbin-staging
       versions:
         - Default
+        allowed_urls:             # Add path-based permissions
+          - url: /get
+            methods:
+              - GET
   active: true
   name: Trial policy (Staging)
   state: active
