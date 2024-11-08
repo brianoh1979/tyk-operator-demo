@@ -8,5 +8,6 @@ jobs:
     machine: true
     resource_class: brianoh1979/macos-runner
     steps:
-      - run: kubectl create configmap oas-api-config-test22 --from-file=oas-api-definition-test21.json -n tyk --dry-run=client -o yaml | kubectl replace -f -
+      - checkout
+      - run: kubectl create configmap oas-api-config-test22 --from-file=./oas/oas-api-definition-test21.json -n tyk --dry-run=client -o yaml | kubectl replace -f -
       - run: kubectl get tykoasapidefinition brian-test22 
