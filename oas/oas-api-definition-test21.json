@@ -1,0 +1,27 @@
+{
+  "info": {
+    "title": "Brian-Test22",
+    "version": "1.0.0"
+  },
+  "openapi": "3.0.3",
+  "components": {},
+  "paths": {},
+  "x-tyk-api-gateway": {
+    "info": {
+      "name": "Brian-Test22",
+      "state": {
+        "active": true
+      }
+    },
+    "upstream": {
+      "url": "http://httpbin.org"
+    },
+    "server": {
+      "listenPath": {
+        "value": "/brian-test22",
+        "strip": true
+      }
+    }
+  }
+}
+
