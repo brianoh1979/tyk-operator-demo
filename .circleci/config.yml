@@ -11,6 +11,6 @@ jobs:
       - checkout
       - run: kubectl create configmap oas-api-config-test23 --from-file=./oas/oas-api-definition-test23.json -n tyk
       - run: kubectl apply -f ./oas/oas-api-definition-test23.yaml
- #     - run: kubectl create configmap oas-api-config-test23 --from-file=./oas/oas-api-definition-test23.json -n tyk --dry-run=client -o yaml | kubectl replace -f -
+      - run: kubectl create configmap oas-api-config-test23 --from-file=./oas/oas-api-definition-test23.json -n tyk --dry-run=client -o yaml | kubectl replace -f -
       - run: kubectl get tykoasapidefinition brian-test23 
       - run: kubectl delete configmap oas-api-config-test23 -n tyk
