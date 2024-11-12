@@ -1,6 +1,6 @@
 {
   "info": {
-    "title": "Brian-Test31",
+    "title": "Brian-Test30",
     "version": "1.0.0"
   },
   "openapi": "3.0.3",
@@ -8,7 +8,7 @@
   "paths": {},
   "x-tyk-api-gateway": {
     "info": {
-      "name": "Brian-Test31",
+      "name": "Brian-Test30",
       "state": {
         "active": true
       }
@@ -18,7 +18,7 @@
     },
     "server": {
       "listenPath": {
-        "value": "/brian-test31",
+        "value": "/brian-test30",
         "strip": true
       }
     }
